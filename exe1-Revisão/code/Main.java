@@ -1,7 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Livro livro = new Livro();
-        livro.Cadastrar("ABC", "CBA", 2024);
-        livro.Mostrar();
+
+        Desenvolvedor dev = new Desenvolvedor();
+        Gerente gerente = new Gerente();
+        Funcionario funcionario = new Funcionario();
+
+        dev.calcularSalario();
+        gerente.calcularSalario();
+        funcionario.calcularSalario();
+
+
+
     }
 }
