@@ -1,31 +1,21 @@
 public class Pessoa {
     private String nome;
     private int idade;
+    public Endereco endereco;
 
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
+    public Pessoa(String nome, int idade, Endereco endereco) {
         this.nome = nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
         this.idade = idade;
+        this.endereco = endereco;
+
     }
 
-    public void MostrarIdade(Pessoa p){
-        System.out.println("Idade: " + p.getIdade());
-    }
-    public static void main(String[] args) {
-        Pessoa p = new Pessoa();
-        p.setNome("Joao");
-        p.setIdade(18);
-        p.MostrarIdade(p);
+
+
+
+    public void MostrarPessoa() {
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Idade: " + this.idade);
+        System.out.println(endereco.toString());
     }
 }

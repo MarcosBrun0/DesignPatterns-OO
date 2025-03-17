@@ -1,14 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        Desenvolvedor dev = new Desenvolvedor();
-        Gerente gerente = new Gerente();
-        Funcionario funcionario = new Funcionario();
 
-        dev.calcularSalario();
-        gerente.calcularSalario();
-        funcionario.calcularSalario();
-
+    Endereco endereco = new Endereco();
+    endereco.CadastrarEndereco("XV De Novembro","Campos Dos Goytacazes",3423);
+    Pessoa pessoa = new Pessoa("Pedro",20,endereco);
+    pessoa.MostrarPessoa();
 
 
     }
