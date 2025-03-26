@@ -1,3 +1,5 @@
+package lista1;
+
 public class Endereco {
     private String rua;
     private String cidade;
